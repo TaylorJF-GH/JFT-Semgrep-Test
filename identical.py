@@ -1,3 +1,4 @@
-x = 1
+# x = 1
 if x is x:
     print("true")
+

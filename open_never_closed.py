@@ -7,6 +7,11 @@ from datetime import datetime
 LOG_PATH = "leaky.log"
 CONFIG_PATH = "leaky.cfg"
 
+def func1():
+    # ruleid:open-never-closed
+    fd = open('foo')
+    x = 123
+
 def write_log_bad(message: str):
     # BAD: open() without close()
     f = open(LOG_PATH, "a")  # noqa: SIM115  # some linters flag "open without with"

@@ -4,7 +4,7 @@
 
 def check_number(x):
     # BAD: using `is` for value comparison
-    if x is 5:  # This may work sometimes due to small integer caching, but is unreliable
+    if x == 5:  # This may work sometimes due to small integer caching, but is unreliable
         print("x is 5 (using 'is')")
     else:
         print("x is not 5 (using 'is')")
@@ -20,3 +20,4 @@ if __name__ == "__main__":
         print(f"Testing value: {val}")
         check_number(val)
         print("----")
+
